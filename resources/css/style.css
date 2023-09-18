@@ -1,0 +1,141 @@
+body{
+    background-image: url(../img/background.jpg);
+    
+}
+
+header h1.inicio{
+
+font-family: fantasy;
+/*color: rgb(225, 193, 111);*/
+color: black;
+font-size: 90px;
+text-align: center;
+}
+
+div#contenedor1{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+button#acceso{
+    
+        background-color: grey; /* Cambia el fondo del botón */
+       /*color: rgb(225, 193, 111);*/
+       color: black;
+        padding: 15px 30px; 
+        border: none;
+        font-size: 16px; 
+    }
+    
+    
+    button#acceso:hover {
+        background-color: #2980b9; /* Cambia el fondo cuando se pasa el mouse sobre el botón */
+    }
+
+    button#acceso:visited{
+        color: black;
+    }
+    p#mensaje{
+        font-family: fantasy;
+       /* color: rgb(225, 193, 111);*/
+        color: black;
+        font-size: 30px;
+        text-align: right;
+        height: 20vh;
+
+    }
+    div.botones-laterales {
+        position: fixed; /* Fijar posición en la ventana del navegador */
+        top: 40%; /* Colocar en la mitad superior de la ventana */
+        transform: translateY(-50%); /* Centrar verticalmente */
+        left: 0; /* Colocar en el lado izquierdo */
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 2;
+       /*justify-content: flex-start;*/
+       /*justify-content: start;*/
+       /* justify-content: end;*/
+       /*justify-content:space-between*/
+    }
+
+    nav ul li{
+        display: inline-block; /*para que se vea en linea (inline-block-inline block*/
+        margin-left: 170px;
+    
+    }
+    nav ul li a {
+        text-decoration: none;
+        /*color: rgb(225, 193, 111);*/
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    nav ul li a::after{
+        content:url("../img/martillo.png");
+    }
+    nav ul li a:hover{
+        color:red;
+        text-decoration:underline;
+    }
+
+    header h2{
+        text-align: center;
+        font-family: fantasy;
+        color: black;
+        font-size: 70px;
+        text-decoration: underline
+
+    }
+    header h2:hover{
+        color: goldenrod;
+    }
+
+    figcaption{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        
+
+    }
+    figcaption:hover{
+        color: goldenrod;
+    }
+
+    div#contenedor2{
+        width: 95%;
+      border: 5px solid black;
+        
+    }
+
+    p.parrafo {
+        text-align: justify;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        
+        
+        
+    }
+    img#boga1{
+        float:left;
+        margin-right: 20px;
+        width: 50%;
+        height: 100vh;
+    }
+    img#boga2{
+        float:right;
+        margin-left: 20px;
+        width: 50%;
+        height: 100vh;
+    }
+    p.parrafo2 {
+        text-align: justify;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+    
