@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Jurídico</title>
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./resources/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
 </head>
 <body>
-    <header>
-        <h1 class="inicio">Bienvenido a CE Soluciones Integrales</h1>
-
-    <div class="botones-laterales">
-        
-        <a href="https://www.facebook.com/" class="boton-facebook"><img src="./resources/img/facebook.png"></a>
-        <a href="https://www.linkedin.com/" class="boton-linkedin"><img src="./resources/img/linkedin.png"></a>
-        <a href="https://wa.me/541126340879"class="boton-whatsapp"><img src="./resources/img/whatsapp.png"></a>
-        <a href="https://wa.me/541158044079"class="boton-whatsapp"><img src="./resources/img/whatsapp.png"></a>
-        <a href="https://www.instagram.com/ceessolucionesintegrales/"class="boton-instagram"><img src="./resources/img/instagram.png"></a>
-        <a href="mailto:ceesolucionesintegrales@gmail.com"class="boton-gmail"><img src="./resources/img/gmail.png"></a>
-    </div>
-
+    <header class="bg-transparent">
+        <div class="container">
+            <h1 class="inicio mt-5 text-center">Bienvenido a CE Soluciones Integrales</h1>
+        </div>
+        <div class="botones-laterales">
+            <a href="https://www.facebook.com/" class="btn btn-transparent boton-facebook"><img src="./resources/img/facebook.png"></a>
+            <a href="https://www.linkedin.com/" class="btn btn-transparent boton-linkedin"><img src="./resources/img/linkedin.png"></a>
+            <a href="https://wa.me/541126340879" class="btn btn-transparent boton-whatsapp"><img src="./resources/img/whatsapp.png"></a>
+            <a href="https://wa.me/541158044079" class="btn btn-transparent boton-whatsapp"><img src="./resources/img/whatsapp.png"></a>
+            <a href="https://www.instagram.com/ceessolucionesintegrales/" class="btn btn-transparent boton-instagram"><img src="./resources/img/instagram.png"></a>
+            <a href="mailto:ceesolucionesintegrales@gmail.com" class="btn btn-transparent boton-gmail"><img src="./resources/img/gmail.png"></a>
+        </div>
     </header>
+
+    <div class="container">
+        <div class="mt-4 text-center" id="contenedor1">
+            <a href="/pages/pagina_principal.html">
+                <button class="btn btn-primary boton-gris" id="acceso">Haga click aquí para acceder</button>
+            </a>
+        </div>
+
+        <audio autoplay loop class="mt-4">
+            <source src="./resources/source/tibetan-singing-bowls-body-damage-repair-heal-body-mind-soul-161797.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
     
-   
-
-    <div id="contenedor1">
-        <a href="/pages/pagina_principal.html"><button id="acceso">Haga click aquí para acceder</button></a>
-
+        <p id="mensaje" class="mt-4 text-left">¡Gracias por visitarnos!</p>
     </div>
-
-    <audio controls autoplay loop>
-        <source src="/resources/source/tibetan-singing-bowls-body-damage-repair-heal-body-mind-soul-161797.mp3" type="audio/mpeg">
-        Tu navegador no soporta la reproducción de audio.
-    </audio>
     
-    <p id="mensaje">¡Gracias por visitarnos!</p>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

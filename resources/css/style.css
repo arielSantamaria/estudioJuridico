@@ -3,139 +3,138 @@ body{
     
 }
 
-header h1.inicio{
+div.botones-laterales {
+    position: fixed; /* Fijar posición en la ventana del navegador */
+    top: 40%; /* Colocar en la mitad superior de la ventana */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    left: 0; /* Colocar en el lado izquierdo */
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+    
+}
+
+h1{
 
 font-family: fantasy;
-/*color: rgb(225, 193, 111);*/
 color: black;
 font-size: 90px;
 text-align: center;
 }
+h1:hover{
+    color: rgb(225, 193, 111);
+}
 
-div#contenedor1{
+/*div#contenedor1{
     display: flex;
     justify-content: center; 
     align-items: center; 
     
-}
+}*/
 
-button#acceso{
-    
-        background-color: grey; /* Cambia el fondo del botón */
-       /*color: rgb(225, 193, 111);*/
-       color: black;
-        padding: 15px 30px; 
-        border: none;
-        font-size: 16px; 
+.boton-gris{    
+        background-color: grey;
     }
     
-    
-    button#acceso:hover {
-        background-color: #2980b9; /* Cambia el fondo cuando se pasa el mouse sobre el botón */
-    }
-
-    button#acceso:visited{
+    .boton-gris:hover {
+        background-color: rgb(225, 193, 111); /* Color de fondo al pasar el mouse */
         color: black;
+    }
+
+    .boton-gris:visited{
+        color: grey;
     }
     p#mensaje{
         font-family: fantasy;
-       /* color: rgb(225, 193, 111);*/
         color: black;
         font-size: 30px;
         text-align: right;
         height: 20vh;
 
     }
-    div.botones-laterales {
-        position: fixed; /* Fijar posición en la ventana del navegador */
-        top: 40%; /* Colocar en la mitad superior de la ventana */
-        transform: translateY(-50%); /* Centrar verticalmente */
-        left: 0; /* Colocar en el lado izquierdo */
-        display:flex;
-        flex-direction: column;
-        gap: 10px;
-        z-index: 2;
-       /*justify-content: flex-start;*/
-       /*justify-content: start;*/
-       /* justify-content: end;*/
-       /*justify-content:space-between*/
+
+    p#mensaje:hover{
+        color: rgb(225, 193, 111); 
+
+    }
+    
+    .navbar-brand {
+        background-color: transparent;
+        text-align: center;
+        margin-left: 70px;
+        margin-right: 30px;
+        font-family: fantasy;
+        font-size: 40px;
     }
 
-    nav ul li{
-        display: inline-block; /*para que se vea en linea (inline-block-inline block*/
-        margin-left: 170px;
     
+
+    .navbar-nav .nav-item {
+        margin-left: 30px;
+        margin-right: 30px; /* Espaciado entre elementos de navegación */
     }
-    nav ul li a {
-        text-decoration: none;
-        /*color: rgb(225, 193, 111);*/
+
+    .nav-item .nav-link {
         color: black;
-        text-align: center;
-        font-size: 20px;
+        font-family: fantasy;
+        font-size: 15px;
     }
     
-    nav ul li a::after{
-        content:url("../img/martillo.png");
+    .nav-item .nav-link:hover {
+        color: rgb(225, 193, 111);
     }
-    nav ul li a:hover{
-        color:red;
+    .nav-item .nav-link:visited{
+        color: grey;
+    }
+
+   .nav-link::after {
+        content:url("../img/martillo.png");
+        
+    }
+
+    p#info{
+        font-family: fantasy;
+        text-align: justify;
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .titulo-gral{
         text-decoration:underline;
     }
-
-    header h2{
-        text-align: center;
-        font-family: fantasy;
-        color: black;
-        font-size: 70px;
-        text-decoration: underline
-
-    }
-    header h2:hover{
-        color: goldenrod;
+    .titulo-gral:hover{
+        color: rgb(225, 193, 111);
     }
 
-    figcaption{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 40px;
-        text-align: center;
-        text-decoration: underline;
-        
-
-    }
-    figcaption:hover{
-        color: goldenrod;
+    h2.ubicacion{
+        text-decoration:underline;
+        text-align: right;
+        margin-right: 100px;
     }
 
-    div#contenedor2{
-        width: 95%;
-      border: 5px solid black;
-        
+    .borde{
+        border: 3px solid transparent;
     }
 
-    p.parrafo {
-        text-align: justify;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 20px;
-        padding: 20px;
-        
-        
-        
+    .borde:hover{
+        border-color: black;
     }
-    img#boga1{
-        float:left;
-        margin-right: 20px;
-        width: 50%;
-        height: 100vh;
-    }
-    img#boga2{
-        float:right;
-        margin-left: 20px;
-        width: 50%;
-        height: 100vh;
-    }
-    p.parrafo2 {
-        text-align: justify;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 20px;
-    }
+
+    .botton {
+        background-color: black ;
+        border-color: white;
+        color: white; 
+        transition: background-color 0.3s ease;
+      }
+      
+      .botton:hover {
+        background-color: rgb(225, 193, 111); 
+        border-color: rgb(225, 193, 111);
+        color: white; 
+      }
     
+      .btn:visited {
+        color: gray;
+      }
