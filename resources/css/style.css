@@ -4,10 +4,10 @@ body{
 }
 
 div.botones-laterales {
-    position: fixed; /* Fijar posición en la ventana del navegador */
-    top: 40%; /* Colocar en la mitad superior de la ventana */
-    transform: translateY(-50%); /* Centrar verticalmente */
-    left: 0; /* Colocar en el lado izquierdo */
+    position: fixed; 
+    top: 40%; 
+    transform: translateY(-50%);
+    left: 0;
     display:flex;
     flex-direction: column;
     gap: 10px;
